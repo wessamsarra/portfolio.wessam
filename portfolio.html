@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="aos.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="AOS/aos.js"></script>
+</head>
+
+<body>
+    <div id="all">
+        <ul id="u1">
+            <li> <a href="#all" id="ho">Home</a></li>
+            <li><a href="#all2" id="ab">About Me</a></li>
+            <li><a href="#all3" id="se">Service</a></li>
+            <li><a href="#all4" id="sk">Skills</a></li>
+            <li><a href="#all5" id="co">Contact Us</a></li>
+        </ul>
+        <h1 id="port">Port<a>folio</a>
+        </h1>
+        <div id="al">
+            <div id="d1" data-aos="fade-up">
+                <p>Hello, my name in</p><br>
+                <h1>Wessam <a>Sarra </a></h1><br>
+                <p>Im' a <a>Full Stack </a>Developer</p><br><br>
+
+                <img src="images/icons8-facebook-25.png" alt="fa">
+                <img src="images/icons8-twitter-25.png" alt="tw">
+                <img src="images/icons8-instagram-25 (1).png" alt="ins">
+                <img src="images/icons8-in-25 (1).png" alt="in"><br><br>
+                <button>Dawnlood CV</button>
+            </div>
+            <div id="d2" data-aos="fade-right">
+                <img src="images/digital-marketing-business-sales-referral-marketing-marketing-removebg-preview.png"
+                    alt="">
+            </div>
+        </div>
+    </div>
+    <div id="all2">
+        <div id="allab">
+            <div id="a1">
+                <img src="images/Hand coding-amico.svg" alt="" data-aos="zoom-in">
+            </div>
+            <div id="a2" data-aos="fade-left">
+                <h1>About <a>Me</a></h1>
+                <p><a>Full Stack</a> Developer</p>
+                <p>I am a front end web developer. I can proved clean code and pixel perfect
+                    design. I also make the website more a more interactive with web
+                    animations. I can proved clean code and pixel perfect
+                    design. I also make the website more a more interactive with web animations. A responsive design
+                    makes your website accessible to all users, regardless of their device
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="all3">
+        <div id="h1" data-aos="fade-right">
+            <h1>Our Service:</h1>
+        </div>
+        <div id="s1">
+            <div id="sd1" data-aos="zoom-out">
+                <img src="images/icons8-list-40.png" alt="">
+                <p>Web Development</p>
+                <small>Every website should be buil with
+                    two primory gools Firstly, it needs
+                    tow work across all devices, Secondly.
+                    it needs to be fast as possible.
+                </small>
+            </div>
+            <div id="sd1" data-aos="flip-down">
+                <img src="images/icons8-user-40.png" alt="">
+                <p>Web Development</p>
+                <small>Every website should be buil with
+                    two primory gools Firstly, it needs
+                    tow work across all devices, Secondly.
+                    it needs to be fast as possible.
+                </small>
+            </div>
+            <div id="sd1" data-aos="flip-right">
+                <img src="images/icons8-bell-40.png" alt="">
+                <p>Web Development</p>
+                <small>Every website should be buil with
+                    two primory gools Firstly, it needs
+                    tow work across all devices, Secondly.
+                    it needs to be fast as possible.
+                </small>
+            </div>
+        </div>
+    </div>
+    <div id="all4">
+        <center>
+            <h1>My Skills</h1>
+        </center>
+        <div id="k1">
+            <div id="k" data-aos="fade-right"><img src="images/icons8-html-80.png" alt="">
+                <p>HTML</p>
+            </div>
+            <div id="k" data-aos="slide-up"><img src="images/icons8-css-80.png" alt="">
+                <P>CSS</P>
+            </div>
+            <div id="k" data-aos="fade-right"><img src="images/icons8-java-80.png" alt="">
+                <P>JAVA</P>
+            </div>
+            <div id="k" data-aos="fade-left"><img src="images/icons8-python-80.png" alt="">
+                <P>PYTHON</P>
+            </div>
+            <div id="k" data-aos="slide-up"><img src="images/icons8-node-js-80.png" alt="">
+                <P>NODE-JS</P>
+            </div>
+            <div id="k" data-aos="fade-left"><img src="images/icons8-sql-80.png" alt="">
+                <P>SQL</P>
+            </div>
+        </div>
+    </div>
+    <div id="all5">
+        <div id="c">
+            <div id="c1" data-aos="slide-up">
+                <h1>Contact Us</h1><br>
+                <input type="text" placeholder="Name" id="in1"><br><br>
+                <input type="text" placeholder="Email" id="in2"><br><br>
+                <input type="text" placeholder="Message" id="in3">
+                <button>Submit</button>
+            </div>
+            <div id="c2" data-aos="zoom-out"><img src="images/Version control-bro.svg" alt=""></div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script>
+    AOS.init({
+        duration: 1800,
+    });
+</script>
+<script>
+    $(document).ready(function () {
+        $("#ho").click(function () {
+            $('html, body').animate({
+                scrollTop: $('#all').offset().top
+            }, 1500,)
+        });
+        $("#ab").click(function () {
+            $('html, body').animate({
+                scrollTop: $('#all2').offset().top
+            }, 1500,)
+        });
+        $("#se").click(function () {
+            $('html, body').animate({
+                scrollTop: $('#all3').offset().top
+            }, 1500,)
+        });
+        $("#sk").click(function () {
+            $('html, body').animate({
+                scrollTop: $('#all4').offset().top
+            }, 1500,)
+        });
+        $("#co").click(function () {
+            $('html, body').animate({
+                scrollTop: $('#all5').offset().top
+            }, 1500,)
+        })
+    })
+</script>
